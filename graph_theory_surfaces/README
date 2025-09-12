@@ -1,0 +1,23 @@
+This is an example folder for the working of the graph based code, a detailed description will be able in a few months.
+
+The program requires, ase: 3.18.0 and python 3 and network X
+
+There are 3 files:
+
+1. chem_env_sid.py: this file has all the basic functionalities of making the graph based representation, isomorphic comparisons to find unique representations, etc. These functionalities can then be used to find unique configurations, find chemical environment of the active site etc. 
+
+2. generate_ads.py: This script uses the functionalities of the chem_env_sid.py file along with its own functionalities to generate adsorbate configurations for a range of given input. 
+
+3. populate_folders.py: This is just a helper file to take all the configurations made using generate_ads.py and then find the unique amongst them and then store them conviniently in folders in 'jobs' to be run for optimization.
+
+The folder also contains, an example. In the example, the folders: 1 and 2, have 2 starting configurations, with adsorbate 'NO' adsorbed in the 2 fold and 3 fold site. NO.POSCAR is the POSCAR representing the adsorbate. If generate_ads.py is run, the program will systematically find all possible unique sites for configurations in 1 and 2 and then store them in the folder 'temp_ads/'.
+After this the user should execute: 
+'populate_folder.py temp_ads/*'
+The above command will take all the POSCAR;s in temp_ads, check for all unique configurations and then only store the cases, which are unique. In the above example only 1 duplicate, in the form of 1 Pt-Pt bridge + Pt-Pt-Pt fcc site will be detected as the duplicate and will be stored in the duplicate folder, which will also have reference to the folder with which the site is duplicate with. 
+
+Once the new jobs are run in the jobs folder, a command of the form:
+
+'python chem_env_sid.py -u -a 'N,O' jobs/*/OUTCAR'
+
+can be run, this will spit out all the configs that are unique as well as the ones that it finds duplicate for a given configuration 
+The output can then be easily used to find the configuration for further population and the loop continues.
