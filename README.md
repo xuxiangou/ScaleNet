@@ -1,4 +1,4 @@
-# ScaleNet: A framework predicting nanoparticles of different size
+# ScaleNet: A framework predicting nanoparticles of different sizes
 
 <img src=".\paper_fig\Figure2.jpg" style="zoom:8%;" />
 
