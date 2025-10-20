@@ -34,4 +34,5 @@ OOD test data: https://drive.google.com/file/d/1ehkM8-v74xJVde91ZxGHcTU2CYMlmW1J
 ## How to change training parameters
 
 You can modify the scaleNet.yaml to build your specific needs.
+`raw_data_dir` is key parameter to specify the detailed dataset path.
 
