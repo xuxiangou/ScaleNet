@@ -28,11 +28,11 @@ python trainer.py
 
 ## Data
 
-Training data: https://drive.google.com/file/d/1zlgWfOiJu-U0-E2BQkcJN2MVIm_YuBpw/view?usp=sharing 
-OOD test data: https://drive.google.com/file/d/1ehkM8-v74xJVde91ZxGHcTU2CYMlmW1J/view?usp=drive_link
+- Training data: https://drive.google.com/file/d/1zlgWfOiJu-U0-E2BQkcJN2MVIm_YuBpw/view?usp=sharing 
+- OOD test data: https://drive.google.com/file/d/1ehkM8-v74xJVde91ZxGHcTU2CYMlmW1J/view?usp=drive_link
 
 ## How to change training parameters
 
 You can modify the scaleNet.yaml to build your specific needs.
-`raw_data_dir` is key parameter to specify the detailed dataset path.
+- `raw_data_dir` is a key parameter to specify the detailed dataset path.
 
