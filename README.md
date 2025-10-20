@@ -1,10 +1,11 @@
 # ScaleNet: A framework predict nanoparticles with different size
 
-<img src=".\paper_fig\Figure2.jpg" style="zoom:13%;" />
+<img src=".\paper_fig\Figure2.jpg" style="zoom:8%;" />
 
 ## Installation
 
 This project required Pytorch, Pymatgen, Ase, DGL
+Detailed version can see requirements.txt
 
 ## Train
 
