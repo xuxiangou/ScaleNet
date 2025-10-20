@@ -34,7 +34,7 @@ data:
   raw_data_dir: ./data/OH
   graph_save_dir: ./graph
   plot_dir: ./plot
-  name: "OH_adsorption_dimenet"
+  name: "OH_adsorption"
 
 pretrain:
   flag: False
