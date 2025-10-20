@@ -1,0 +1,41 @@
+name: "dimenet++"
+
+model:
+  units: 64
+  nblocks: 3
+  cutoff: 5.0
+  extensive: True
+  # ['mu', 'alpha', 'homo', 'lumo', 'gap', 'r2', 'zpve', 'U0', 'U', 'H', 'G', 'Cv']
+  targets: [ 'energy' ]
+  model_save_dir: ./model
+
+train:
+  num_train: 0.8
+  num_valid: 0.1
+  data_seed: 42
+  lr: 0.003
+  weight_decay: 0.001
+  ema_decay: 0.9
+  batch_size: 2
+  warmup_steps: 10
+  decay_steps: 300
+  decay_rate: 0.3
+  staircase: False
+  epochs: 300
+  early_stopping: 20
+  num_workers: 8
+  gpu: 0
+  interval: 5
+  test_batch_size: 2
+  mode: True
+  grad_clip: 0.01
+
+data:
+  raw_data_dir: ./data/OH
+  graph_save_dir: ./graph
+  plot_dir: ./plot
+  name: "OH_adsorption_dimenet"
+
+pretrain:
+  flag: False
+  path: './model/30/best_model.pt'
