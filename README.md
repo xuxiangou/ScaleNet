@@ -4,8 +4,7 @@
 
 ## Installation
 
-This project required Pytorch, Pymatgen, Ase, DGL
-Detailed version can see requirements.txt
+This project required Pytorch, Pymatgen, Ase, DGL. Detailed version can see requirements.txt
 
 ## Train
 
