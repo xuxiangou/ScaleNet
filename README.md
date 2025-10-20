@@ -29,7 +29,7 @@ python trainer.py
 
 ## Data
 
-Training data: https://drive.google.com/file/d/1zlgWfOiJu-U0-E2BQkcJN2MVIm_YuBpw/view?usp=sharing \ 
+Training data: https://drive.google.com/file/d/1zlgWfOiJu-U0-E2BQkcJN2MVIm_YuBpw/view?usp=sharing 
 OOD test data: https://drive.google.com/file/d/1ehkM8-v74xJVde91ZxGHcTU2CYMlmW1J/view?usp=drive_link
 
 ## How to change training parameters
