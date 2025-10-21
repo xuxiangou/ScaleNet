@@ -10,7 +10,7 @@ certifi==2024.8.30
 charset-normalizer==3.4.0
 contourpy==1.3.1
 cycler==0.12.1
-dgl @ file: dgl-2.5a241115%2Bcu124-cp310-cp310-manylinux1_x86_64.whl#sha256=3dd93e657b40e6bec96742453542c52c5611221c5c1e18dcf13a79e8854104d8
+dgl==2.5.0
 filelock==3.16.1
 fonttools==4.55.0
 frozenlist==1.5.0
@@ -78,8 +78,8 @@ tensorboard==2.19.0
 tensorboard-data-server==0.7.2
 threadpoolctl==3.5.0
 tokenizers==0.21.0
-torch @ file: torch-2.4.1%2Bcu124-cp310-cp310-linux_x86_64.whl#sha256=464cb998fa46d34317b10811dad88486aa8aeb96ebbcefc3ed3f00ddf6c3249b
-torch_scatter @ file: torch_scatter-2.1.2%2Bpt24cu124-cp310-cp310-linux_x86_64.whl#sha256=e73a971328449ac0d8dcb72521229bbbf573690a02e9680965d3635cbaa20fff
+torch==2.4.1
+torch_scatter==2.1.2
 torchmetrics==1.6.0
 tqdm==4.67.0
 transformers==4.49.0
